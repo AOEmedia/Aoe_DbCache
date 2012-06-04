@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Aoe_DbCache>
+			<version>0.1.0</version>
+		</Aoe_DbCache>
+	</modules>
+
+	<global>
+		<helpers>
+			<aoe_dbcache>
+				<class>Aoe_DbCache_Helper</class>
+			</aoe_dbcache>
+		</helpers>
+		<models>
+			<aoe_dbcache>
+				<class>Aoe_DbCache_Model</class>
+			</aoe_dbcache>
+		</models>
+
+		<resources>
+			<cache_write>
+				<connection>
+					<!-- Add custom configuration pointing to a differnet database in your local.xml -->
+					<use>default_write</use>
+				</connection>
+			</cache_write>
+		</resources>
+
+	</global>
+
+</config>
